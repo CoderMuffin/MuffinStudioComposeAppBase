@@ -1,17 +1,7 @@
 plugins {
     id 'com.android.application'
-    //id 'org.jetbrains.kotlin.android';
 }
-//task prepareKotlinBuildScriptModel {}
 android {
-    sourceSets {
-        main {
-            //assets.srcDirs = ["C:\\Working\\RecipeApp2\\frontend"]
-        }
-    }
-    //lintOptions {
-  //      check true
-//    }
     namespace 'com.codermuffin.muffin_studio_app_base'
     compileSdk 33
 
@@ -34,9 +24,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    //kotlinOptions {
-    //    jvmTarget = '1.8'
-    //}
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -50,7 +37,6 @@ android {
 
 dependencies {
     implementation 'androidx.core:core-ktx:1.8.0'
-    implementation platform('org.jetbrains.kotlin:kotlin-bom:1.8.0')
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
     implementation 'androidx.activity:activity-compose:1.5.1'
     implementation platform('androidx.compose:compose-bom:2022.10.00')
